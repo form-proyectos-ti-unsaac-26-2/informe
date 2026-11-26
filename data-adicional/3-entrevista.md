@@ -13,15 +13,15 @@ E3). Este documento es el registro: con fecha, nombre y firma, E3 deja de estar
 
 ## Datos de la diligencia
 
-| Campo | Valor |
-| --- | --- |
-| Fecha | ____ / ____ / 2026  |
-| Hora de inicio / fin | ____ : ____ — ____ : ____ |
-| Lugar | ______________________________ |
-| Entrevistado | Ing. Ademir Portillo |
-| Cargo / área | ______________________________ |
-| Entrevistadores | Auccacusi · León · Prieto |
-| Quién registra | ______________________________ |
+| Campo                | Valor                          |
+| -------------------- | ------------------------------ |
+| Fecha                | ____ / ____ / 2026             |
+| Hora de inicio / fin | ____ : ____ — ____ : ____      |
+| Lugar                | ______________________________ |
+| Entrevistado         | Ing. Ademir Portillo           |
+| Cargo / área         | ______________________________ |
+| Entrevistadores      | Auccacusi · León · Prieto      |
+| Quién registra       | ______________________________ |
 
 **Uso de la información.** Lo registrado aquí se usa únicamente para el informe
 del curso. Se entrega copia al entrevistado. Puede marcar
@@ -31,23 +31,21 @@ cualquier pregunta como *No responde* o pedir que se retire.
 
 Marcar una opción por fila. «Corrección» es para matizar o negar.
 
-| # | Afirmación que hoy figura en el informe | Sí | No | Parcial | No sé | Corrección / matiz |
-| --- | --- | --- | --- | --- | --- | --- |
-| A1 | En laboratorios de la EPIIS se requiere configurar la IP manualmente | ☐ | ☐ | ☐ | ☐ | |
-| A2 | Esa configuración manual se debe a que el DHCP no entrega dirección | ☐ | ☐ | ☐ | ☐ | |
-| A3 | Aplica a unos 8 laboratorios del pabellón | ☐ | ☐ | ☐ | ☐ | |
-| A4 | La configuración manual es una **política** del laboratorio (control de acceso o asignación fija), no una falla | ☐ | ☐ | ☐ | ☐ | |
-| A5 | La lentitud crítica se concentra en los laboratorios 309–312 | ☐ | ☐ | ☐ | ☐ | |
-| A6 | En algunas aulas no aparece la señal Wi-Fi | ☐ | ☐ | ☐ | ☐ | |
-| A7 | Los cortes de conexión son frecuentes durante las clases | ☐ | ☐ | ☐ | ☐ | |
-| A8 | Cualquier cambio en VLAN o DHCP debe coordinarse antes con Soporte EPIIS | ☐ | ☐ | ☐ | ☐ | |
+| #   | Afirmación que hoy figura en el informe                                                                         | Sí  | No  | Parcial | No sé | Corrección / matiz |
+| --- | --------------------------------------------------------------------------------------------------------------- | --- | --- | ------- | ----- | ------------------ |
+| A1  | En laboratorios de la EPIIS se requiere configurar la IP manualmente                                            | ☐   | ☐   | ☐       | ☐     |                    |
+| A2  | Esa configuración manual se debe a que el DHCP no entrega dirección                                             | ☐   | ☐   | ☐       | ☐     |                    |
+| A3  | Aplica a unos 8 laboratorios del pabellón                                                                       | ☐   | ☐   | ☐       | ☐     |                    |
+| A4  | La configuración manual es una **política** del laboratorio (control de acceso o asignación fija), no una falla | ☐   | ☐   | ☐       | ☐     |                    |
+| A5  | La lentitud crítica se concentra en los laboratorios 309–312                                                    | ☐   | ☐   | ☐       | ☐     |                    |
+| A6  | En algunas aulas no aparece la señal Wi-Fi                                                                      | ☐   | ☐   | ☐       | ☐     |                    |
+| A7  | Los cortes de conexión son frecuentes durante las clases                                                        | ☐   | ☐   | ☐       | ☐     |                    |
+| A8  | Cualquier cambio en VLAN o DHCP debe coordinarse antes con Soporte EPIIS                                        | ☐   | ☐   | ☐       | ☐     |                    |
 
 **A3.a ¿En qué laboratorios?** Marcar los que correspondan (lista del informe,
 `2.problema.tex:52`):
-
-☐ 111 · ☐ 207 · ☐ 208 · ☐ 301 · ☐ 302 · ☐ 303 · ☐ 304 · ☐ 305 · ☐ 306 ·
-☐ 309 · ☐ 310 · ☐ 311 · ☐ 312 · ☐ 419
-☐ otros: ______________________________
+☐ 207 · ☐ 208 · ☐ 301 · ☐ 302 · ☐ 303 · ☐ 304 · ☐ 305 · ☐ 306 ·
+☐ 309 · ☐ 310 · ☐ 311 · ☐ 312 · ☐ otros: ______________________________
 
 ## Bloque B · Operación actual de la red
 
@@ -82,16 +80,16 @@ Marcar una opción por fila. «Corrección» es para matizar o negar.
 
 ## Bloque C · Evidencia que puede entregar o autorizar
 
-| Documento o dato | Disponible | Formato | Fecha | ¿Cómo se comparte? |
-| --- | --- | --- | --- | --- |
-| Mapa de red o planos del pabellón | ☐ sí ☐ no | | | |
-| Configuración de DHCP y VLAN (puede ser sanitizada) | ☐ sí ☐ no | | | |
-| Tabla de concesiones de direcciones | ☐ sí ☐ no | | | |
-| Inventario de equipos y puertos por laboratorio | ☐ sí ☐ no | | | |
-| Tickets, actas o registros de incidentes de red | ☐ sí ☐ no | | | |
-| Pruebas de velocidad previas hechas por soporte | ☐ sí ☐ no | | | |
-| Contrato u orden de servicio del enlace | ☐ sí ☐ no | | | |
-| Horario de uso de laboratorios en el semestre | ☐ sí ☐ no | | | |
+| Documento o dato                                    | Disponible | Formato | Fecha | ¿Cómo se comparte? |
+| --------------------------------------------------- | ---------- | ------- | ----- | ------------------ |
+| Mapa de red o planos del pabellón                   | ☐ sí ☐ no  |         |       |                    |
+| Configuración de DHCP y VLAN (puede ser sanitizada) | ☐ sí ☐ no  |         |       |                    |
+| Tabla de concesiones de direcciones                 | ☐ sí ☐ no  |         |       |                    |
+| Inventario de equipos y puertos por laboratorio     | ☐ sí ☐ no  |         |       |                    |
+| Tickets, actas o registros de incidentes de red     | ☐ sí ☐ no  |         |       |                    |
+| Pruebas de velocidad previas hechas por soporte     | ☐ sí ☐ no  |         |       |                    |
+| Contrato u orden de servicio del enlace             | ☐ sí ☐ no  |         |       |                    |
+| Horario de uso de laboratorios en el semestre       | ☐ sí ☐ no  |         |       |                    |
 
 Observaciones:
 
@@ -113,12 +111,12 @@ Observaciones:
 
 ## Bloque E · Compromisos y cierre
 
-| Compromiso | Sí / No / condicionado | Detalle o condición | Fecha |
-| --- | --- | --- | --- |
-| Autoriza el acceso de lectura a la configuración de DHCP y VLAN | | | |
-| Facilita el inventario de equipos y puertos | | | |
-| Permite participar en la prueba de asignación de IP en hora punta | | | |
-| Revisa el acta antes de que se cite en el informe | | | |
+| Compromiso                                                        | Sí / No / condicionado | Detalle o condición | Fecha |
+| ----------------------------------------------------------------- | ---------------------- | ------------------- | ----- |
+| Autoriza el acceso de lectura a la configuración de DHCP y VLAN   |                        |                     |       |
+| Facilita el inventario de equipos y puertos                       |                        |                     |       |
+| Permite participar en la prueba de asignación de IP en hora punta |                        |                     |       |
+| Revisa el acta antes de que se cite en el informe                 |                        |                     |       |
 
 ¿A quién más hay que consultar? (nombre, cargo, motivo)
 
@@ -135,9 +133,9 @@ Fecha y hora: ____ / ____ / 2026 · ____ : ____
 
 ## Registro posterior (lo completa el equipo, no el entrevistado)
 
-| Campo | Valor |
-| --- | --- |
-| Transcripción | ______________________________ |
-| Dónde se archiva | ______________________________ |
+| Campo                                            | Valor                                                                                                                                             |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Transcripción                                    | ______________________________                                                                                                                    |
+| Dónde se archiva                                 | ______________________________                                                                                                                    |
 | Afirmaciones que cambian de estado en el informe | E3 pasa de «fecha pendiente» a fuente fechada (`2.problema.tex:40`) · estado de CI2 (`2.problema.tex:89`) · alcance de RF-01 (`5.alcance.tex:55`) |
-| Pendientes que quedan, con responsable y plazo | ______________________________ |
+| Pendientes que quedan, con responsable y plazo   | ______________________________                                                                                                                    |

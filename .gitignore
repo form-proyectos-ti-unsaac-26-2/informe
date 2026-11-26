@@ -52,5 +52,8 @@ log.txt
 *_temp.tex
 TODO.txt
 
+# Obsidian (configuracion local de las notas)
+.obsidian/
+
 # Otros
 .vscode

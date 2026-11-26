@@ -60,6 +60,12 @@ src/
 LICENSE                       Licencia MIT del template original
 ```
 
+El corpus documental del curso (diapositivas de la profesora, fichas, consigna
+de la V1 y el caso TDR 2021) **no vive aquí**: está en el repositorio hermano
+`form-proyectos-ti-unsaac-26-2/material`. Este repo solo compila el informe y
+conserva lo producido por el equipo (`data-adicional/`). Nada de `main.tex`
+depende de aquel repositorio.
+
 ## Dónde se escribe
 
 1. `main.tex`: datos del documento (`\documenttitle`, `\documentauthor`,

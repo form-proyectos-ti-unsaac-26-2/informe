@@ -1,0 +1,84 @@
+% Figura: matriz poder-interes de interesados (gestion de interesados, unidad 2)
+% Fuente de datos: data-adicional/2-plan-involucramiento.md, Tabla A
+% Genera img/figura3-matriz-stakeholders.png (16.2 x 14.1 cm a 300 dpi):
+%   pdflatex -output-directory=/tmp/fig matriz-stakeholders.tex
+%   pdftoppm -png -r 300 /tmp/fig/matriz-stakeholders.pdf img/figura3-matriz-stakeholders
+\documentclass[border=3pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{lmodern}
+\usepackage{tikz}
+
+\definecolor{cardinalred}{RGB}{140,21,21}
+\definecolor{dkcyan}{RGB}{0,123,167}
+\definecolor{dkgray}{RGB}{90,90,90}
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{lgray}{RGB}{240,240,240}
+
+\tikzset{
+	punto/.style={circle,fill=#1,draw=white,line width=1.2pt,minimum size=11pt,inner sep=0pt},
+	actornombre/.style={font=\sffamily\footnotesize\bfseries,text=dkgray,align=left,text width=3.5cm},
+	estrategia/.style={font=\sffamily\footnotesize\bfseries,text=#1},
+	leyenda/.style={font=\sffamily\scriptsize,text=dkgray!85},
+}
+
+\newcommand{\actortexto}[1]{{\sffamily\fontsize{6.2}{7.4}\selectfont\color{dkgray!85}#1}}
+
+% #1 x, #2 y, #3 color de la postura actual, #4 actor, #5 actual, #6 deseada, #7 lado (0 derecha, 180 izquierda)
+\newcommand{\actor}[7]{%
+	\node[punto=#3,label={[actornombre,label distance=4pt]#7:{\hyphenpenalty=10000\exhyphenpenalty=10000\textbf{#4}\\[1pt]\actortexto{#5}\,$\rightarrow$\,\actortexto{#6}}}] at (#1,#2) {};
+}
+
+\begin{document}
+\begin{tikzpicture}[x=1.4cm,y=1.15cm,font=\sffamily]
+
+	% Cuadrantes: poder (eje y) x interes (eje x)
+	\fill[cardinalred!5] (0,5) rectangle (5,10);
+	\fill[dkcyan!6]      (5,5) rectangle (10,10);
+	\fill[lgray!90]      (0,0) rectangle (5,5);
+	\fill[ocre!7]        (5,0) rectangle (10,5);
+	\draw[dkgray,thick] (0,0) rectangle (10,10);
+	\draw[dkgray,thick,dashed] (5,0) -- (5,10);
+	\draw[dkgray,thick,dashed] (0,5) -- (10,5);
+
+	% Estrategia por cuadrante
+	\node[estrategia=cardinalred,anchor=north west] at (0.2,9.85) {Mantener satisfechos};
+	\node[estrategia=dkcyan,anchor=north east]      at (9.8,9.85) {Gestionar de cerca};
+	\node[estrategia=ocre,anchor=south east]        at (9.8,0.2) {Mantener informados};
+	\node[estrategia=dkgray,anchor=south west]      at (0.2,0.2) {Monitorear};
+
+	% Ejes
+	\draw[solid,->,dkgray,line width=0.8pt] (-0.2,0) -- (-0.2,10.3);
+	\draw[solid,->,dkgray,line width=0.8pt] (0,-0.2) -- (10.35,-0.2);
+	\node[rotate=90,font=\sffamily\footnotesize,text=dkgray] at (-0.85,4.5) {Poder / influencia};
+	\node[font=\sffamily\footnotesize,text=dkgray] at (4.9,-0.85) {Interés en el resultado};
+	\node[font=\sffamily\scriptsize\itshape,text=dkgray!80] at (5.2,-1.55)
+		{Posturas: hipótesis (H) sin acta ni registro — Estados: desconoce · neutral · apoya · lidera};
+
+	% Alto poder / alto interés
+	\actor{7.2}{9.0}{cardinalred}{Dirección de la EPIIS}{lidera}{lidera}{0}
+	\actor{6.4}{6.2}{ocre}{Soporte EPIIS / Ing.\ de Redes}{neutral}{apoya}{0}
+
+	% Alto poder / bajo interés
+	\actor{3.4}{8.7}{ocre}{Logística / Abastecimiento}{neutral}{informado}{180}
+	\actor{4.2}{7.0}{ocre}{Oficina de TI central}{neutral}{escalamiento}{180}
+
+	% Bajo poder / alto interés
+	\actor{6.6}{4.3}{dkgray}{Ing.\ Ademir Portillo}{desconoce}{apoya}{0}
+	\actor{7.0}{2.6}{dkgray}{Docentes de laboratorio}{desconocen}{apoyan}{0}
+	\actor{6.5}{1.5}{dkgray}{Estudiantes de laboratorio}{desconocen}{apoyan}{0}
+
+	% Leyenda de postura actual
+	\node[anchor=north west,font=\sffamily\bfseries\footnotesize,text=dkgray] at (0.3,4.55) {Postura actual};
+	\fill[dkgray]      (0.45,3.8)  circle (3.2pt);
+	\fill[ocre]        (0.45,3.1)  circle (3.2pt);
+	\fill[dkcyan]      (0.45,2.4)  circle (3.2pt);
+	\fill[cardinalred] (0.45,1.7)  circle (3.2pt);
+	\node[leyenda,anchor=west] at (0.75,3.8)  {desconoce};
+	\node[leyenda,anchor=west] at (0.75,3.1)  {neutral};
+	\node[leyenda,anchor=west] at (0.75,2.4)  {apoya};
+	\node[leyenda,anchor=west] at (0.75,1.7)  {lidera};
+
+\end{tikzpicture}
+\end{document}
